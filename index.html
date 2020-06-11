@@ -9,31 +9,41 @@
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="src/Thermostat.js"></script>
   <script src="interface.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-  <section>
-    <h1>Current temperature:</h1>
-    <h1 id="temperature"></h1>
-    <p>
-      <button id="temperature-up">+</button>
-      <button id="temperature-down">-</button>
-      <button id="temperature-reset">reset</button>
-      power saving mode is <span id="power-saving-status">on</span>
-      <button id="powersaving-on">PSM on</button>
-      <button id="powersaving-off">PSM off</button>
-    </p>
-  </section>
+  <div class="container center-align">
+    <section>
+      <h1>Current temperature:</h1>
+      <h1 id="temperature"></h1>
+      <p>
+        <button id="temperature-up" class="btn btn-floating red">+</button>
+        <button id="temperature-down" class="btn btn-floating blue">-</button>
+        <button id="temperature-reset" class="btn btn-floating green"> <i class="material-icons">refresh</i></button>
+        power saving mode is <span id="power-saving-status">on</span>
+        <button id="powersaving-on">PSM on</button>
+        <button id="powersaving-off">PSM off</button>
+      </p>
+    </section>
 
-  <section>
-    <!-- <form id="select-city"> -->
-    <input id="current-city" type="text" placeholder="Enter a city"></input>
-    <button id="get-weather">Get weather</button>
-    <!-- <input type="submit"></input> -->
-    <!-- </form> -->
-    <p>Current weather in <span id='location'></span>: <span id="current-weather"></span></p>
-  </section>
+    <section>
+      <!-- <form id="select-city"> -->
+      <div class="input-field col s6">
+        <i class="material-icons prefix">add_location</i>
+        <input id="current-city" type="text" placeholder="Enter a city" style="width:30%;"></input>
+      </div>
+
+      <button id="get-weather">Get weather</button>
+      <!-- <input type="submit"></input> -->
+      <!-- </form> -->
+      <p>Current weather in <span id='location'></span>: <span id="current-weather"></span></p>
+    </section>
+  </div>
+
 
 </body>
 
