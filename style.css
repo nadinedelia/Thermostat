@@ -1,15 +1,21 @@
+
+
 .low-usage {
-  color: green;
+  color: #355C7D;
 }
 
 .medium-usage {
-  color: black;
+  color: #000000;
 }
 
 .high-usage {
-  color: red;
+  color: #F8B195;
 }
 
 .btn {
-  background-color: black !important;
+  background-color: #F67280 !important;
+}
+
+.btn-floating {
+  background-color: #F8B195 !important;
 }
