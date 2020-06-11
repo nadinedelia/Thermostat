@@ -9,3 +9,7 @@
 .high-usage {
   color: red;
 }
+
+.btn {
+  background-color: black !important;
+}
