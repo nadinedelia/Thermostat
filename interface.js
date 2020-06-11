@@ -12,7 +12,7 @@ $(document).ready(function () {
 
   function getWeather(city) {
 
-    $.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1e90f3e390607c8ae6d86a559464894e`, function (result) {
+    $.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1e90f3e390607c8ae6d86a559464894e`, function (result) {
       var weather = result.weather[0].description;
 
       $("#current-weather").html(weather);
