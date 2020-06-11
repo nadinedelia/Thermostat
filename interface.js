@@ -2,7 +2,7 @@ $(document).ready(function () {
   var thermostat = new Thermostat();
   updateTemperature();
 
-
+ getWeather('London');
 
   $('#get-weather').click(function () {
     var currentCity = $("#current-city").val();
@@ -16,6 +16,7 @@ $(document).ready(function () {
       var weather = result.weather[0].description;
 
       $("#current-weather").html(weather);
+      $("#location").html(city);
 
 
     });
