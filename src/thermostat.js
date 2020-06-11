@@ -60,4 +60,6 @@ class Thermostat {
     return 'high-usage';
   }
 
+  
+
 }
