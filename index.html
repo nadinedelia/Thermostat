@@ -13,29 +13,15 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 
-  <div class="container center-align">
-    <section>
-      <h1>Current temperature:</h1>
-
-
-      <h1 id="temperature"></h1>
-      <p>
-        <button id="temperature-up" class="btn btn-floating">+</button>
-        <button id="temperature-down" class="btn btn-floating">-</button>
-        <button id="temperature-reset" class="btn btn-floating"> <i class="material-icons">refresh</i></button>
-        <br>
-        power saving mode is <span id="power-saving-status">on</span>
-        <br>
-        <br>
-        <br>
-        <button id="powersaving-on" class="btn">PSM on</button>
-        <button id="powersaving-off" class="btn">PSM off</button>
-      </p>
-    </section>
+<div class="container center-align">
+  <section>
+    <h1>Current temperature:</h1>
 
     <section>
+
       <!-- <form id="select-city"> -->
       <div class="input-field col s6">
         <i class="material-icons prefix">add_location</i>
@@ -47,7 +33,26 @@
       <!-- </form> -->
       <p>Current weather in <span id='location'></span>: <span id="current-weather"></span></p>
     </section>
-  </div>
+
+    <div class="card-panel hoverable">
+      <h1 id="temperature"></h1>
+      <p>
+        <button id="temperature-up" class="btn btn-floating">+</button>
+        <button id="temperature-down" class="btn btn-floating">-</button>
+        <button id="temperature-reset" class="btn btn-floating"> <i class="material-icons">refresh</i></button>
+        <br>
+        <br>
+        Power Saving Mode
+        <span id="power-saving-status">on</span>
+        <br>
+        <br>
+        <br>
+        <button id="powersaving-on" class="btn">On</button>
+        <button id="powersaving-off" class="btn">Off</button>
+    </div>
+  </section>
+
+</div>
 
 
 </body>

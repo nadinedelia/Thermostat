@@ -1,4 +1,7 @@
 
+body {
+  background: url('https://i.imgur.com/gzIWLqC.jpg?1')
+}
 
 .low-usage {
   color: #355C7D;
@@ -18,4 +21,13 @@
 
 .btn-floating {
   background-color: #F8B195 !important;
+}
+
+.card-panel {
+  width: 180px;
+  background-color: white;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
 }
