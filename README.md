@@ -4,6 +4,6 @@
 
 ### Getting hot in here?
 
-##Check it out on:
+## Check it out on:
 
 https://thermostatic.netlify.app/
