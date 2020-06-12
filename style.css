@@ -31,3 +31,12 @@ body {
 h1 {
   font-family: 'Lobster', cursive;
 }
+
+.link {
+  color: black;
+}
+.grid-container {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
